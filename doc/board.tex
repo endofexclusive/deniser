@@ -1,0 +1,278 @@
+%% Example data sheet
+%% Feel free to modify and use this file for any purpose, under
+%% either the LaTeX Project Public License or under public domain.
+
+% Options here are passed to the article class.
+% Most common options: 10pt, 11pt, 12pt
+\documentclass[10pt]{datasheet}
+
+% Input encoding and typographical rules for English language
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[english]{isodate}
+
+% tikz is used to draw images in this example, but you can
+% also use \includegraphics{}.
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{circuitikz}
+\usetikzlibrary{calc}
+\usepackage[abs]{overpic}
+\usepackage{siunitx}
+\usepackage{float}
+
+\newcommand{\proj}{Deniser board}
+
+\newcommand\Warning{%
+ \makebox[1.4em][c]{%
+ \makebox[0pt][c]{\raisebox{.1em}{\small!}}%
+ \makebox[0pt][c]{\color{red}\Large$\bigtriangleup$}}}%
+
+
+% These define global texts that are used in headers and titles.
+\title{\proj{}}
+\author{Some Author}
+\date{April 2021}
+\revision{Revision 1}
+\companylogo{\Huge $\nabla$ Fancy Company}
+
+\begin{document}
+\maketitle
+
+\section{Features}
+\begin{multicols}{2}
+\begin{itemize}
+\item{MachXO3D FPGA}
+\item{48-pin DIP connector}
+\item{46 $\times$ \SI{5}{V} compatible I/O}
+\end{itemize}
+\columnbreak
+\begin{itemize}
+\item{On-board voltage regulation}
+\item{Powered from \SI{5}{V} source}
+\item{User connector with \SI{3.3}{V} I/O}
+\end{itemize}
+
+\end{multicols}
+
+\section{General Description}
+The \proj{} is a 48-pin DIP form factor board designed around a Lattice
+Semiconductor MachXO3D FPGA.
+It was designed for use in Amiga computers, while it can also function as a
+general small-footprint FPGA breakout board.
+
+\section{Hardware Overview}
+
+\begin{figure}[H]
+\begin{center}
+  \begin{includegraphics}[width=0.85\textwidth]{callout.pdf}
+  \end{includegraphics}
+\end{center}
+    \caption{\proj{} with callouts}
+
+\begin{tabularx}{\textwidth}{  l X | l X }
+    \thickhline
+    \textbf{Callout} & \textbf{Description} & \textbf{Callout} & \textbf{Description} \\
+    \hline
+    1 & JTAG header & 4 & MachXO3D FPGA\\
+    2 & User LED                & 7, 9 & DIP connector\\
+    3, 5, 6 & Bus transceiver \SI{5}{V} $\leftrightarrow$ \SI{3.3}{V} & 8 & Voltage regulator\\
+    \hline
+    \thickhline
+\end{tabularx}
+\end{figure}
+
+\section{Board Power}
+The \proj{} is powered with \SI{4.75}{V} to \SI{5.25}{V} DC from the DIP
+connector.
+Input power is routed to a Texas Instruments LP5907
+linear voltage regulator.
+This voltage regulator is rated for 250mA and produces
+the main \SI{3.3}{V} supply for the board.
+
+A LED (\texttt{D1}) indicates that the board is receiving power on the \SI{5}{V} power rail.
+
+\begin{table}[ht]
+\caption{Voltage regulator circuit information}
+\begin{tabularx}{\textwidth}{l   l   l   X}
+    \thickhline
+    \textbf{Supply} & \textbf{Circuits} & \textbf{Device} & \textbf{Max. Current} \\
+    \hline
+    \SI{3.3}{V} & All & \texttt{U5}: Texas Instruments LP507 & \SI{250}{mA} \\
+    \thickhline
+\end{tabularx}
+\end{table}
+
+\section{FPGA Configuration}
+After power-on, the MachXO3D FPGA must be configured before it can perform any
+function.
+The FPGA is normally configured from the on-chip non-volatile configuration
+memory.
+The JTAG interface allows configuring the FPGA at any time aswell as
+programming the on-chip non-volatile configuration memory.
+JTAG signals are available on the user expansion header \texttt{J3}.
+
+\section{FPGA variants}
+The \proj{} is compatible with MachXO3D devices specified for \SI{3.3}{V}
+supply voltage, such as the ZC and HC device variants.
+These devices have an internal linear voltage regulator, which is powered by
+the \proj{} \SI{3.3}{V} power rail.
+
+MachXO3D HE devices can not be used with the \proj{}.
+
+\section{Block diagram}
+\begin{figure}[ht]
+\begin{center}
+  \begin{includegraphics}[width=0.40\textwidth]{hw-block.pdf}
+  \end{includegraphics}
+    \caption{Hardware block diagram}
+\end{center}
+\end{figure}
+
+\clearpage
+\section{DIP connector}
+\begin{table}[H]
+\begin{threeparttable}
+\caption{DIP connector pinout}
+\begin{tabularx}{\textwidth}{ l l l l l }
+  \thickhline
+  \textbf{Pin} & \textbf{Designation} & \textbf{Function} & \textbf{Direction} & \textbf{Board connection}\\
+  \hline
+  01-07   & D6-D0         & Data bus lines 6 to 0     & I/O & \texttt{U3} \\
+  08      & M1H           & Mouse 1 horizontal        & I & \texttt{U4} \\
+  09      & M0H           & Mouse 0 horizontal        & I & \texttt{U4} \\
+  10-17   & RGA8-RGA1     & Register address bus 8-1  & I & \texttt{U4} \\
+  18      & /BURST        & Color burst               & O & \texttt{U2} \\
+  19      & VCC           & +\SI{5}{V}                & I & LDO input \\
+  20-23   & R0-R3         & Video red bits 0-3        & O & \texttt{U2} \\
+  24-27   & B0-B3         & Video blue bits 0-3       & O & \texttt{U2} \\
+  28-31   & G0-G3         & Video green bits 0-3      & O & \texttt{U2} \\
+  32      & /CSYNC        & Composite sync            & I & \texttt{U4} \\
+  33      & /ZD           & Background indicator      & O & \texttt{U2} \\
+  34      & CDAC\tnote{1} & CDAC clock                & I (ECS Denise) & \texttt{U4} \\
+  35      & 7M            & \SI{7.15909}{MHz}         & I & \texttt{U4} \\
+  36      & CCK           & Color clock               & I & \texttt{U4} \\
+  37      & VSS           & Ground                    & I & Ground \\
+  38      & M0V           & Mouse 0 vertical          & I & \texttt{U4} \\
+  39      & M1V           & Mouse 1 vertical          & I & \texttt{U4} \\
+  40-48   & D15-D7        & Data bus lines 15 to 7    & I/O & \texttt{U3} \\
+  \thickhline
+\end{tabularx}
+\begin{tablenotes}
+\item[1]{\textit{"Not connected"} in OCS Denise}
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+The transceivers \texttt{U2}, \texttt{U3} and \texttt{U4} are located between
+the DIP connector \SI{5}{V} logic signals and the FPGA \SI{3.3}{V} I/O.
+
+\begin{itemize}
+\item{\texttt{U2} drives signals FPGA$\rightarrow$DIP.}
+\item{\texttt{U4} drives signals FPGA$\leftarrow$DIP.}
+\item{\texttt{U3} drives signals FPGA$\leftarrow$DIP when the signal
+\texttt{drd\_rl\_to\_fpga} is high, and FPGA$\rightarrow$DIP when low.
+The board signal \texttt{drd\_noe} is connected to the \texttt{U3} active low input
+\texttt{nOE}.
+\texttt{drd\_rl\_to\_fpga} and
+\texttt{drd\_noe}
+can be controlled by the FPGA.}
+\end{itemize}
+
+\clearpage
+\section{User Expansion}
+\label{user}
+
+The header \texttt{J3} provides connections for JTAG and user I/O.
+
+\begin{table}[H]
+\caption{\texttt{J3} pinout}
+\label{j3pin}
+\begin{tabular}[c]{ l l l }
+    \thickhline
+    \textbf{Pin} & \textbf{Signal} & \textbf{MachXO3D pin}\\
+    \hline
+    \texttt{1}  & INITN & 55 \\
+    \texttt{2}  & DONE  & 54 \\
+    \texttt{3}  & TMS   & 70 \\
+    \texttt{4}  & 3V3   & \textit{many} \\
+    \texttt{5}  & GND   & PAD \\
+    \texttt{6}  & TCK   & 71 \\
+    \texttt{7}  & TDO   & 2 \\
+    \texttt{8}  & TDI   & 1 \\
+    \texttt{9}  & user0 & 4 \\
+    \texttt{10} & user1 & 7 \\
+    \thickhline
+\end{tabular}
+\end{table}
+
+A convenient way to access the FPGA JTAG port is to connect with
+the FTDI FT2232H Mini Module (Table \ref{mini}).
+
+\begin{table}[H]
+\caption{Connection reference for the FT2232H Mini Module}
+\label{mini}
+\begin{tabularx}{\textwidth}{ l r l X }
+    \thickhline
+    \textbf{Signal} & \textbf{\proj{} \texttt{J3}} & \textbf{FT2232H Mini Module} & \textbf{FT2232H} \\
+    \hline
+    TCK & 6   & CN2-7   & ADBUS0 \\
+    TDI & 8   & CN2-10  & ADBUS1 \\
+    TDO & 7   & CN2-9   & ADBUS2 \\
+    TMS & 3   & CN2-12  & ADBUS3 \\
+    \hline
+    GND & 5   & CN2-2, CN2-4, CN2-6   & GND \\
+    \thickhline
+\end{tabularx}
+\end{table}
+
+\clearpage
+\section{Electronic Schematics}
+\label{sch}
+%\begin{figure}[ht]
+\begin{center}
+  \begin{includegraphics}[width=1.0\textwidth]{deniser-schematic-v1.pdf}
+%  \caption{Schematics}
+  \end{includegraphics}
+\end{center}
+%\end{figure}
+
+\clearpage
+\section{Bill of materials}
+\begin{table}[H]
+\caption{Bill of materials}
+\begin{tabularx}{\textwidth}{| l | l | X | l | X |}
+    \thickhline
+    \textbf{Item} & \textbf{\#} & \textbf{Designator} & \textbf{MPN} & \textbf{Description} \\
+    \hline
+    1   &  25 &
+C1, C2, C3, C4, \newline
+C5, C6, C7, C8, \newline
+C9, C10, C11, C12, \newline
+C13, C14, C15, C16, \newline
+C17, C18, C21, C22, \newline
+C23, C24, C25, C26, \newline
+C27
+                                    & GRM155R71C104KA88     & \SI{100}{nF} \\
+    \hline
+    2   &  4  & C19, C20, C28, C29  & LMK107BJ106MALTD      & \SI{10}{\mu F}        \\
+    \hline
+    3   &  5  & R1, R2, R3, R4, R5  & ERJ-3EKF4701          & \SI{4.7}{k\ohm}       \\
+    \hline
+    4   &  2  & D1, D2              & LTST-C191KRKT         & Red LED               \\
+    \hline
+    5   &  1  & U1                  & LCMXO3D-4300HC-5SG72C & FPGA                  \\
+    \hline
+    6   &  3  & U2, U3, U4          & 74LVCH162245ADGG      & 16-bit transceiver \\
+    \hline
+    7   &  1  & U5                  & LP5907MFX-3.3/NOPB    & LDO \SI{3.3}{V} \SI{250}{mA} \\
+    \hline
+    8   &  2  & J1, J2              & M20-9992445           & Header 1 $\times$ 24  \\
+    \hline
+    9   &  1  & J3                  & 10129381-910001BLF    & Header 2 $\times$ 5   \\
+    \thickhline
+\end{tabularx}
+\end{table}
+
+\end{document}
+

@@ -27,7 +27,7 @@
 % The class is based on the twocolumn article class.
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
-\LoadClass[twocolumn]{article}
+\LoadClass[twocolumn,a4paper]{article}
 
 % Useful symbol and color definitions
 \RequirePackage{gensymb}
@@ -54,7 +54,9 @@
 
 % Configure page margins
 \RequirePackage{geometry}
-\geometry{left=2cm, top=2cm, right=2cm, bottom=3cm}
+\geometry{top=3.2cm, bottom=4.2cm}
+%\geometry{top=3.5cm, bottom=4.5cm}
+%\geometry{left=2cm, top=2cm, right=2cm, bottom=3cm}
 
 % Command \companylogo{} can be used in document to specify a logo for the first page.
 \gdef\@companylogo{}
@@ -66,13 +68,13 @@
 
 % First page title layout is defined here
 \renewcommand{\maketitle}{%
-    \twocolumn[%
-        {\@companylogo}\\
-        \vspace{1cm}\\
+        \onecolumn
+%        {\@companylogo}\
+\
+%        \vspace{1cm}\\
         {\Huge\sffamily\bfseries\@title}\\
         \noindent\rule{\textwidth}{1pt}
-        \medskip
-        ]%
+%        \medskip
         \pagestyle{normalpage}
         \thispagestyle{firstpage}
 }
@@ -93,9 +95,11 @@
 \fancypagestyle{normalpage}{
     \renewcommand{\headrulewidth}{0.5pt}
     \renewcommand{\footrulewidth}{0.5pt}
-    \fancyhead[L]{\@author}
-    \fancyhead[C]{\slshape\@title}
-    \fancyhead[R]{\@date}
+    \fancyhead[L]{\slshape\@title}
+%    \fancyhead[L]{\@author}
+%    \fancyhead[C]{\slshape\@title}
+%    \fancyhead[R]{\@date}
+    \fancyhead[R]{}
     \fancyfoot[L]{\@revision}
     \fancyfoot[C]{\@date}
     \fancyfoot[R]{Page \thepage\ of \pageref{LastPage}}
@@ -122,4 +126,5 @@
 \newcommand{\thickhline}{\noalign {\ifnum 0=`}\fi \hrule height 1pt \futurelet \reserved@a \@xhline}
 
 % No numbering for section titles
+% \setcounter{secnumdepth}{0}
 \setcounter{secnumdepth}{0}
