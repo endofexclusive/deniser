@@ -1,0 +1,18 @@
+== ModelSim
+
+To simulate with ModelSim distributed with Lattice Diamond:
+
+  cd vsim
+  make test
+
+An interactive ModelSim session is started using the `make launch` target.
+
+
+The Make script can be used with "ModelSim Lattice FPGA Edition".
+If you are using a different ModelSim distribution, then you may
+need to compile and analyse the Lattice simulation libraries manually.
+The models are installed with Diamond in
+`cae_library/simulation/vhdl`.
+Another option is to set TECH=0 in the Makefile to use the
+technology-independent model.
+

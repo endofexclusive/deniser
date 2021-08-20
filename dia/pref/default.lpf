@@ -1,0 +1,116 @@
+# LPF contains preferences for the TRACE map tool
+# VHDL          -> synthesis  -> EDIF
+# EDIF          -> translate  -> NGD
+# NGD+LPF       -> trace map  -> NCD (mapped)
+# NCD (mapped)  -> trace par  -> NCD (placed and routed)
+
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+# BLOCK JTAGPATHS ;
+
+VOLTAGE 3.300 V;
+TEMPERATURE 40.000 C;
+BANK 0 VCCIO 3.3 V;
+BANK 1 VCCIO 3.3 V;
+BANK 2 VCCIO 3.3 V;
+BANK 3 VCCIO 3.3 V;
+
+IOBUF ALLPORTS            IO_TYPE=LVCMOS33;
+IOBUF PORT "clk7" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+IOBUF PORT "cck" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+IOBUF PORT "m0h" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+IOBUF PORT "m0v" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+IOBUF PORT "m1h" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+IOBUF PORT "m1v" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+IOBUF PORT "ncdac" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+IOBUF PORT "ncsync" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+IOBUF PORT "rga[1]" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+IOBUF PORT "rga[2]" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+IOBUF PORT "rga[3]" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+IOBUF PORT "rga[4]" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+IOBUF PORT "rga[5]" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+IOBUF PORT "rga[6]" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+IOBUF PORT "rga[7]" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+IOBUF PORT "rga[8]" PULLMODE=NONE IO_TYPE=LVCMOS33 ;
+
+PERIOD PORT "clk7" 140.000000 ns HOLD_MARGIN 0.100000 ns CLOCK_JITTER 0.100000 ns ;
+PERIOD PORT "ncdac" 140.000000 ns HOLD_MARGIN 0.100000 ns CLOCK_JITTER 0.100000 ns ;
+
+SYSCONFIG SLAVE_SPI_PORT=DISABLE;
+
+LOCATE  COMP  "clk7"            SITE  "23";
+LOCATE  COMP  "cck"             SITE  "36";
+LOCATE  COMP  "m0h"             SITE  "22";
+LOCATE  COMP  "m0v"             SITE  "37";
+LOCATE  COMP  "m1h"             SITE  "16";
+LOCATE  COMP  "m1v"             SITE  "38";
+LOCATE  COMP  "ncdac"           SITE  "26";
+LOCATE  COMP  "ncsync"          SITE  "40";
+LOCATE  COMP  "rga[1]"          SITE  "14";
+LOCATE  COMP  "rga[2]"          SITE  "20";
+LOCATE  COMP  "rga[3]"          SITE  "24";
+LOCATE  COMP  "rga[4]"          SITE  "27";
+LOCATE  COMP  "rga[5]"          SITE  "28";
+LOCATE  COMP  "rga[6]"          SITE  "30";
+LOCATE  COMP  "rga[7]"          SITE  "21";
+LOCATE  COMP  "rga[8]"          SITE  "19";
+
+LOCATE  COMP  "drd[0]"          SITE  "8";
+LOCATE  COMP  "drd[1]"          SITE  "65";
+LOCATE  COMP  "drd[2]"          SITE  "66";
+LOCATE  COMP  "drd[3]"          SITE  "67";
+LOCATE  COMP  "drd[4]"          SITE  "6";
+LOCATE  COMP  "drd[5]"          SITE  "69";
+LOCATE  COMP  "drd[6]"          SITE  "68";
+LOCATE  COMP  "drd[7]"          SITE  "51";
+LOCATE  COMP  "drd[8]"          SITE  "53";
+LOCATE  COMP  "drd[9]"          SITE  "50";
+LOCATE  COMP  "drd[10]"         SITE  "52";
+LOCATE  COMP  "drd[11]"         SITE  "57";
+LOCATE  COMP  "drd[12]"         SITE  "59";
+LOCATE  COMP  "drd[13]"         SITE  "58";
+LOCATE  COMP  "drd[14]"         SITE  "63";
+LOCATE  COMP  "drd[15]"         SITE  "56";
+
+LOCATE  COMP  "drd_noe"         SITE  "49";
+LOCATE  COMP  "drd_rl_to_fpga"  SITE  "3";
+LOCATE  COMP  "nburst"          SITE  "12";
+LOCATE  COMP  "nzd"             SITE  "47";
+LOCATE  COMP  "video_r[0]"      SITE  "10";
+LOCATE  COMP  "video_r[1]"      SITE  "11";
+LOCATE  COMP  "video_r[2]"      SITE  "17";
+LOCATE  COMP  "video_r[3]"      SITE  "13";
+LOCATE  COMP  "video_g[0]"      SITE  "41";
+LOCATE  COMP  "video_g[1]"      SITE  "34";
+LOCATE  COMP  "video_g[2]"      SITE  "33";
+LOCATE  COMP  "video_g[3]"      SITE  "31";
+LOCATE  COMP  "video_b[0]"      SITE  "9";
+LOCATE  COMP  "video_b[1]"      SITE  "45";
+LOCATE  COMP  "video_b[2]"      SITE  "44";
+LOCATE  COMP  "video_b[3]"      SITE  "43";
+
+LOCATE  COMP  "user0"           SITE  "4";
+LOCATE  COMP  "user1"           SITE  "7";
+# JTAGENB
+LOCATE  COMP  "led0"            SITE  "62";
+
+# Configuration (Dual function pins used during sysCONFIG)
+## PROGRAMN
+PROHIBIT SITE "61";
+## INITN
+PROHIBIT SITE "55";
+## DONE
+PROHIBIT SITE "54";
+## SN
+PROHIBIT SITE "35";
+
+# JTAG
+## TCK
+PROHIBIT SITE "71";
+## TMS
+PROHIBIT SITE "70";
+## TDO
+PROHIBIT SITE "2";
+## TDI
+PROHIBIT SITE "1";
+

@@ -1,0 +1,20 @@
+== Gate level simulation
+
+The Lattice Diamond implementation flow writes netlist files in
+VHDL format which can be used with simulation.
+So instead of giving the simulator a high-level VHDL description
+of the Deniser design, we give it a description represented by
+the targets low-level building blocks (LUTs, registers, routing,
+I/O pads, etc.).
+The testbench and test cases are still represented by the
+same high-level VHDL code as with the RTL simulation.
+
+To simulate the FPGA design after place and route, issue:
+
+  cd vsim-hw
+  make distclean
+  make TOP=../dia/build/toppar.vhdl test
+
+The Make variable `TOP` selects the netlist top file.
+You can find more VHDL netlists in the `dia/build` directory.
+

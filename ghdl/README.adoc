@@ -1,0 +1,34 @@
+== GHDL
+
+To simulate with GHDL:
+
+  cd ghdl
+  make test
+
+The terminal output should look something like this:
+
+  BEGIN: joy0
+  INFO  RGA: power-on
+  sysfreq:  3571 KHz
+  period:   280000000 fs
+  --- simulation begin
+  INFO  RGA: power-up reset done
+  DEBUG RGA: write $03C <- $CAFE
+  DEBUG RGA: write $08E <- $2C81
+  DEBUG RGA: write $090 <- $F4C1
+  DEBUG RGA: write $100 <- $2000
+  DEBUG RGA: write $102 <- $0022
+  DEBUG RGA: read  $00A -> $XXXX
+  DEBUG RGA: write $036 <- $55AA
+  DEBUG RGA: read  $00A -> $56AA
+  --- simulation end
+  END:   joy0
+
+This test case writes to the Denise joystick-mouse
+counters via the `JOYTEST` register (`$036`) and then reads the
+`JOY0DAT` register (`$00A`), checking that the writable bits
+are updated.
+
+The GHDL testbenches write signal transitions to `.ghw` files
+which can be displayed in the GTKWave waveform viewer.
+

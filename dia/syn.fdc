@@ -1,0 +1,9 @@
+create_clock  -name {clkspec} {p:clk7} -period {140}
+set_clock_uncertainty  {0.1} {c:clkspec}
+create_clock  -name {clkvirt} -period {140}
+
+###==== BEGIN Attributes - (Populated from tab in SCOPE, do not edit)
+define_global_attribute  -comment {Prevents unused pads from being optimized away to allow I/O pad insertion on the unused port.} {syn_force_pads} {1}
+# define_global_attribute  {syn_useioff} {0}
+###==== END Attributes
+

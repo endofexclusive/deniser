@@ -1,0 +1,25 @@
+About
+=====
+
+This directory contains scripts and files for implementation
+using the Lattice Diamond tools.
+
+
+Troubleshooting the "make conf" target
+======================================
+
+To unload the Linux FTDI kernel driver:
+
+  # rmmod ftdi_sio
+
+
+The "Lattice Programmer Diamond" may complain about USB device
+permission, with a message like this:
+
+  libusb couldn't open USB device /dev/bus/usb/003/002: Permission denied.
+  libusb requires write access to USB device nodes.
+
+It can be solved by setting write permission to the device file.
+
+  # chmod o+w /dev/bus/usb/003/002
+
