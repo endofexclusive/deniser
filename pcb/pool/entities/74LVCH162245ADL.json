@@ -1,0 +1,16 @@
+{
+    "gates": {
+        "8b9a0b74-9f4b-416b-ae7c-bfa3d4bf10f7": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "60eb8eb5-17d1-493a-ad94-d58a5c2338b4"
+        }
+    },
+    "manufacturer": "Nexperia",
+    "name": "74LVCH162245ADL",
+    "prefix": "U",
+    "tags": [],
+    "type": "entity",
+    "uuid": "7d1047f9-d0cf-4972-816a-ee31b1019928"
+}

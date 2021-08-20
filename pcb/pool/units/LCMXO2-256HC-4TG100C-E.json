@@ -1,0 +1,20 @@
+{
+    "manufacturer": "Lattice Semiconductor",
+    "name": "LCMXO2-256HC-4TG100C E",
+    "pins": {
+        "bf2828a2-d4b1-4900-b564-3ef1cb71ffe9": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VCC",
+            "swap_group": 0
+        },
+        "d593397d-2c73-47e6-a467-151cb08811e2": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "GND",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "76ec0390-43dd-460a-8c3c-5b4f9584cf3e"
+}

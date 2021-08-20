@@ -1,0 +1,124 @@
+{
+    "holes": {
+        "f5409957-47b6-408e-82d9-4be515bd193b": {
+            "diameter": 400000,
+            "length": 500000,
+            "parameter_class": "hole",
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    0,
+                    0
+                ]
+            },
+            "plated": true,
+            "shape": "round"
+        }
+    },
+    "name": "TH round with rectangular pad",
+    "padstack_type": "through",
+    "parameter_program": "get-parameter [ hole_diameter ]\nset-hole [ hole round ]\n\nget-parameter [ pad_width ]\nget-parameter [ pad_height ]\ndupc\nset-shape [ pad rectangle ]\n\nget-parameter [ solder_mask_expansion ]\n2 *\n+xy\nset-shape [ mask rectangle ]\n\n",
+    "parameter_set": {
+        "hole_diameter": 400000,
+        "pad_height": 600000,
+        "pad_width": 600000,
+        "solder_mask_expansion": 100000
+    },
+    "parameters_required": [
+        "pad_width",
+        "pad_height",
+        "hole_diameter"
+    ],
+    "polygons": {},
+    "shapes": {
+        "353172c9-192a-400a-b58e-1158574b87bc": {
+            "form": "rectangle",
+            "layer": -110,
+            "parameter_class": "mask",
+            "params": [
+                800000,
+                800000
+            ],
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    0,
+                    0
+                ]
+            }
+        },
+        "5224af39-0a1e-49e4-a52b-56b6ba0e3ec7": {
+            "form": "rectangle",
+            "layer": -1,
+            "parameter_class": "pad",
+            "params": [
+                600000,
+                600000
+            ],
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    0,
+                    0
+                ]
+            }
+        },
+        "a91777ab-36ac-4e06-ba2b-086384d45d3c": {
+            "form": "rectangle",
+            "layer": 0,
+            "parameter_class": "pad",
+            "params": [
+                600000,
+                600000
+            ],
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    0,
+                    0
+                ]
+            }
+        },
+        "a936b991-8b29-46d4-8b59-1ed4365f9e12": {
+            "form": "rectangle",
+            "layer": -100,
+            "parameter_class": "pad",
+            "params": [
+                600000,
+                600000
+            ],
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    0,
+                    0
+                ]
+            }
+        },
+        "c59af151-1017-44cb-8ee9-d950cbebdad7": {
+            "form": "rectangle",
+            "layer": 10,
+            "parameter_class": "mask",
+            "params": [
+                800000,
+                800000
+            ],
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    0,
+                    0
+                ]
+            }
+        }
+    },
+    "type": "padstack",
+    "uuid": "982142aa-2883-4fd0-9b0b-37eb5a37dd35",
+    "well_known_name": "th rectangular"
+}

@@ -1,0 +1,43 @@
+{
+    "MPN": [
+        false,
+        "base 0603 led"
+    ],
+    "datasheet": [
+        false,
+        ""
+    ],
+    "description": [
+        false,
+        ""
+    ],
+    "entity": "f061691a-7954-4797-9529-dba6527d8f4f",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        ""
+    ],
+    "model": "4aa5e1f7-312d-4fc9-bfee-0d6048b581f1",
+    "package": "ee1f4a18-2a52-4c17-a02d-371ea0ab343f",
+    "pad_map": {
+        "1a32a4c6-0adc-4947-ab27-c14c3380ecc6": {
+            "gate": "c8168f99-a1ca-4d98-bbb7-066f8cad2346",
+            "pin": "3c305ca9-14d3-40b4-a365-8938959c043e"
+        },
+        "dec661f3-a37e-4510-b296-a64510e72bd3": {
+            "gate": "c8168f99-a1ca-4d98-bbb7-066f8cad2346",
+            "pin": "f3a0ce45-6d5e-453b-9649-33baf57cc7b7"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "led"
+    ],
+    "type": "part",
+    "uuid": "86ca09b4-ea0c-45a7-81d2-f9129d94a122",
+    "value": [
+        false,
+        ""
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "MPN": [
+        false,
+        "LP5907MFX-3.3/NOPB"
+    ],
+    "base": "bb5c3035-e25d-40f7-9a8c-b009b3d6c347",
+    "datasheet": [
+        true,
+        "http://www.ti.com/lit/ds/symlink/lp5907.pdf"
+    ],
+    "description": [
+        true,
+        "250 mA Ultra-Low-Noise, Low Iq LDO"
+    ],
+    "entity": "857c7565-9bb3-4602-b9db-e969e6cd5ff1",
+    "inherit_tags": true,
+    "manufacturer": [
+        true,
+        "Texas Instruments"
+    ],
+    "package": "624b7467-2d56-4d8c-b89b-6bffff5f05e9",
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "14e8adfa-0ddf-4c43-bec1-3c1d3971ade5",
+    "value": [
+        true,
+        "LP5907"
+    ]
+}

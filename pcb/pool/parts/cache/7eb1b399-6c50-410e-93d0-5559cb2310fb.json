@@ -1,0 +1,32 @@
+{
+    "MPN": [
+        false,
+        "LTST-C191KRKT"
+    ],
+    "base": "86ca09b4-ea0c-45a7-81d2-f9129d94a122",
+    "datasheet": [
+        false,
+        "http://optoelectronics.liteon.com/upload/download/DS22-2000-223/LTST-C191KRKT.PDF"
+    ],
+    "description": [
+        false,
+        "LED red clear 0603 SMD "
+    ],
+    "inherit_model": false,
+    "inherit_tags": true,
+    "manufacturer": [
+        false,
+        "Lite-On"
+    ],
+    "model": "a757e7bf-0ff0-49c9-86c7-f2655313b5be",
+    "parametric": {},
+    "tags": [
+        "red"
+    ],
+    "type": "part",
+    "uuid": "7eb1b399-6c50-410e-93d0-5559cb2310fb",
+    "value": [
+        true,
+        "base 0603 led"
+    ]
+}

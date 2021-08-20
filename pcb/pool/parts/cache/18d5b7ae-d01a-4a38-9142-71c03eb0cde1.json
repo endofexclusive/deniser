@@ -1,0 +1,30 @@
+{
+    "MPN": [
+        false,
+        "GRM15x 0402 base"
+    ],
+    "base": "29043bfd-c944-47cb-ae49-8dc6e1cf7257",
+    "datasheet": [
+        false,
+        "https://www.murata.com/-/media/webrenewal/support/library/catalog/products/capacitor/ceramiccapacitor/c02e.ashx"
+    ],
+    "description": [
+        false,
+        "Chip Multilayer Ceramic Capacitors for General Purpose"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        false,
+        "Murata"
+    ],
+    "model": "96c366ee-a963-41a0-9cc8-54c646979695",
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "18d5b7ae-d01a-4a38-9142-71c03eb0cde1",
+    "value": [
+        true,
+        "base 0402 capacitor"
+    ]
+}

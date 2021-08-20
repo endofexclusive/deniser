@@ -1,0 +1,104 @@
+{
+    "manufacturer": "Lattice Semiconductor",
+    "name": "LCMXO3D-4300HC-5SG72C Bank 1",
+    "pins": {
+        "39dc5732-c1ad-494f-afc5-8120dbd697c4": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PR2C",
+            "swap_group": 0
+        },
+        "49f42a3b-d73e-4915-b4b1-17e7f6a3f289": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PR5A",
+            "swap_group": 0
+        },
+        "589b55a7-24b0-44aa-ba0d-6cb1a4640c2d": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PR15A",
+            "swap_group": 0
+        },
+        "6d735d1e-e697-4c34-a0b7-086d51eae6ef": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKC1_0"
+            ],
+            "primary_name": "PR10B",
+            "swap_group": 0
+        },
+        "91a9f9e8-e731-4955-a7dd-68d01e2bacd6": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VCCIO1",
+            "swap_group": 0
+        },
+        "979a0ab8-5f99-4a81-87ef-76ffee3b3df5": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PR8A",
+            "swap_group": 0
+        },
+        "9d3657b8-ced2-4d2e-be3b-23cb21f1b87d": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PR15B",
+            "swap_group": 0
+        },
+        "cbf287a6-4cbe-44df-b243-00d0accc7eef": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKT1_0"
+            ],
+            "primary_name": "PR10A",
+            "swap_group": 0
+        },
+        "d03b44b5-1dd5-4e0e-9458-1f1426fbd549": {
+            "direction": "bidirectional",
+            "names": [
+                "R_GPLLT_FB"
+            ],
+            "primary_name": "PR2A",
+            "swap_group": 0
+        },
+        "d25b6d9d-5788-4ee0-9290-3c2dd37a969c": {
+            "direction": "bidirectional",
+            "names": [
+                "R_GPLLT_IN"
+            ],
+            "primary_name": "PR3A",
+            "swap_group": 0
+        },
+        "d8f9a85f-ee20-4f3b-abde-faf8cc593e7e": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PR18A",
+            "swap_group": 0
+        },
+        "e7c220f2-9ac6-4227-9aee-4d4b39cf2c83": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PR8B",
+            "swap_group": 0
+        },
+        "e9448f7d-3365-4d4e-87e0-a99648b0520d": {
+            "direction": "bidirectional",
+            "names": [
+                "R_GPLLC_FB"
+            ],
+            "primary_name": "PR2B",
+            "swap_group": 0
+        },
+        "ef2cd5a9-d1f0-4ae6-a8c9-2a7d7f807d87": {
+            "direction": "bidirectional",
+            "names": [
+                "R_GPLLC_IN"
+            ],
+            "primary_name": "PR3B",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "7cf50ea6-fb9e-41b8-99a7-c97854e3fb75"
+}

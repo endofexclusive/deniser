@@ -1,0 +1,35 @@
+{
+    "MPN": [
+        false,
+        "LMK107BJ106MALTD"
+    ],
+    "base": "a26c8e74-076e-4a31-9d19-6e604363427a",
+    "datasheet": [
+        true,
+        "https://www.yuden.co.jp/productdata/catalog/mlcc_all_e.pdf"
+    ],
+    "description": [
+        true,
+        "Multilayer ceramic capacitor"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        true,
+        "Taiyo Yuden C0603 base"
+    ],
+    "model": "81b4eab3-7b34-4676-8ea6-eace11df803e",
+    "parametric": {
+        "type": "X5R",
+        "table": "capacitors",
+        "value": "1.000000e-05",
+        "wvdc": "10.0"
+    },
+    "tags": [],
+    "type": "part",
+    "uuid": "dc0147fb-e85e-43bf-8516-4ad1c0c6b1cc",
+    "value": [
+        false,
+        "10 µF"
+    ]
+}

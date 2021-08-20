@@ -1,0 +1,30 @@
+{
+    "MPN": [
+        false,
+        "Taiyo Yuden C0603 base"
+    ],
+    "base": "436da8ee-a0a4-4ab4-ae41-10323bb580e5",
+    "datasheet": [
+        false,
+        "https://www.yuden.co.jp/productdata/catalog/mlcc_all_e.pdf"
+    ],
+    "description": [
+        false,
+        "Multilayer ceramic capacitor"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        false,
+        "Taiyo Yuden"
+    ],
+    "model": "e5d28768-4a04-4830-9557-577daa248137",
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "a26c8e74-076e-4a31-9d19-6e604363427a",
+    "value": [
+        false,
+        ""
+    ]
+}

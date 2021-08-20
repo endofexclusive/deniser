@@ -1,0 +1,20 @@
+{
+    "blocks": [
+        {
+            "block_filename": "top_block.json",
+            "is_top": true,
+            "schematic_filename": "top_sch.json"
+        }
+    ],
+    "board_filename": "board.json",
+    "name": "",
+    "pictures_filename": "pictures",
+    "pool_cache_directory": "cache",
+    "pool_directory": "pool",
+    "pool_uuid": "6d752bc3-29b3-45df-8cf2-1e3aacefbcc6",
+    "title": "",
+    "type": "project",
+    "uuid": "c73ea148-1d6c-49a1-b5ee-501b382ffe88",
+    "version": 1,
+    "vias_directory": "vias"
+}

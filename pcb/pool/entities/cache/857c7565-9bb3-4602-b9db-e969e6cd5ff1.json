@@ -1,0 +1,19 @@
+{
+    "gates": {
+        "2d3bd29d-19d4-4956-9e05-541aeefd808d": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "bfe8cef7-b71f-49d4-b7a9-0d46e40517b4"
+        }
+    },
+    "manufacturer": "",
+    "name": "Three-terminal voltage regulator with enable",
+    "prefix": "U",
+    "tags": [
+        "ic",
+        "regulator"
+    ],
+    "type": "entity",
+    "uuid": "857c7565-9bb3-4602-b9db-e969e6cd5ff1"
+}

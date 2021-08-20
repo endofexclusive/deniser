@@ -1,0 +1,20 @@
+{
+    "manufacturer": "Lattice Semiconductor",
+    "name": "LCMXO3D-4300HC-5SG72C Power",
+    "pins": {
+        "3b9f55f1-e62a-45f6-9929-c08b258ab7e7": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VCC",
+            "swap_group": 0
+        },
+        "b5558e97-a37f-4292-9a0c-81f12783c16e": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "GND",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "95ecd194-58df-4040-abad-687e18773373"
+}

@@ -1,0 +1,52 @@
+{
+    "MPN": [
+        false,
+        "LP5907"
+    ],
+    "datasheet": [
+        false,
+        "http://www.ti.com/lit/ds/symlink/lp5907.pdf"
+    ],
+    "description": [
+        false,
+        "250 mA Ultra-Low-Noise, Low Iq LDO"
+    ],
+    "entity": "857c7565-9bb3-4602-b9db-e969e6cd5ff1",
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Texas Instruments"
+    ],
+    "model": "d72fc8d1-69ba-46d8-b9f1-63cf4b4b4907",
+    "package": "624b7467-2d56-4d8c-b89b-6bffff5f05e9",
+    "pad_map": {
+        "1ff65f5a-efed-46a2-a9dd-a29f42fae9f2": {
+            "gate": "2d3bd29d-19d4-4956-9e05-541aeefd808d",
+            "pin": "559d5e91-2169-486b-9ece-8db9867957dd"
+        },
+        "59f542a7-e248-47de-b0f5-6a79c7761d7c": {
+            "gate": "2d3bd29d-19d4-4956-9e05-541aeefd808d",
+            "pin": "2f2e33ae-ea54-4fc9-b2c0-e6be3e1d02e0"
+        },
+        "95821a81-23a1-4f75-8de0-b3f0b7575311": {
+            "gate": "2d3bd29d-19d4-4956-9e05-541aeefd808d",
+            "pin": "304699c2-7433-4b03-ad2c-c8df631dd06f"
+        },
+        "dfd8347a-b99f-42c2-9401-0a63ce9667dc": {
+            "gate": "2d3bd29d-19d4-4956-9e05-541aeefd808d",
+            "pin": "20f0495c-5e6e-4975-b440-1399ca09d3c3"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "ic",
+        "ldo",
+        "regulator"
+    ],
+    "type": "part",
+    "uuid": "bb5c3035-e25d-40f7-9a8c-b009b3d6c347",
+    "value": [
+        false,
+        ""
+    ]
+}

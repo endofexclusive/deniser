@@ -1,0 +1,122 @@
+{
+    "manufacturer": "Lattice Semiconductor",
+    "name": "LCMXO2-256HC-4TG100C C",
+    "pins": {
+        "04d39d3d-2bfc-46bc-a307-79837753bbff": {
+            "direction": "not_connected",
+            "names": [],
+            "primary_name": "NC",
+            "swap_group": 0
+        },
+        "1172ce43-4161-443f-af90-bf5e4c4b1a06": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PB7C",
+            "swap_group": 0
+        },
+        "140f49b3-ee94-4cf4-afd9-86a389ee1e86": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PB7B",
+            "swap_group": 0
+        },
+        "23af90c8-7cd8-4160-b6be-92e121dc700f": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKT2_1"
+            ],
+            "primary_name": "PB4C",
+            "swap_group": 0
+        },
+        "2ad97225-0576-40e2-afe1-88d7c850a312": {
+            "direction": "bidirectional",
+            "names": [
+                "SN"
+            ],
+            "primary_name": "PB9A",
+            "swap_group": 0
+        },
+        "2ae40d0d-3386-4d40-b686-391a430bf502": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKC2_1"
+            ],
+            "primary_name": "PB4D",
+            "swap_group": 0
+        },
+        "2e32e3ac-2cb1-4ea8-a3cb-f5813d65dfea": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKT2_0"
+            ],
+            "primary_name": "PB4A",
+            "swap_group": 0
+        },
+        "35fe3ffa-0ffb-4d85-82d9-9ceb01ff71f7": {
+            "direction": "bidirectional",
+            "names": [
+                "SO/SPISO"
+            ],
+            "primary_name": "PB2D",
+            "swap_group": 0
+        },
+        "56f5b58d-ca60-40c7-afd0-c78ca407efe8": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKC2_0"
+            ],
+            "primary_name": "PB4B",
+            "swap_group": 0
+        },
+        "6573bcb9-72b0-42a7-842d-50c01ed68f9a": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VCCIO2",
+            "swap_group": 0
+        },
+        "8c0ab97a-9418-472a-a8c3-289832229b04": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PB2B",
+            "swap_group": 0
+        },
+        "92d7a5b6-d2c4-4e31-9583-8ae51e74a5bd": {
+            "direction": "bidirectional",
+            "names": [
+                "CSSPIN"
+            ],
+            "primary_name": "PB2A",
+            "swap_group": 0
+        },
+        "99c4460a-5d2d-4ce6-8eed-74fcccf20c5c": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PB7A",
+            "swap_group": 0
+        },
+        "a5851956-f64a-4fbb-a12a-f27151a4fd1f": {
+            "direction": "bidirectional",
+            "names": [
+                "MCLK/CCLK"
+            ],
+            "primary_name": "PB2C",
+            "swap_group": 0
+        },
+        "cf03696c-4ea2-46a1-b474-14903d7b8c2c": {
+            "direction": "bidirectional",
+            "names": [
+                "SI/SISPI"
+            ],
+            "primary_name": "PB9B",
+            "swap_group": 0
+        },
+        "db6fc24c-4852-4f6b-80f8-6c604c7eb394": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PB7D",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "95985c94-ba91-43c9-bf96-b5500d3827e6"
+}

@@ -1,0 +1,72 @@
+{
+    "manufacturer": "Lattice Semiconductor",
+    "name": "LCMXO3D-4300HC-5SG72C Bank 3",
+    "pins": {
+        "08a74547-f911-400d-93f4-b0f432d95bb5": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PL20A",
+            "swap_group": 0
+        },
+        "33ac824a-b331-4be9-9f97-2f4e68a1f6f4": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VCCIO3",
+            "swap_group": 0
+        },
+        "476f7156-24c8-4e34-b794-861b71ac44ef": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKT3_0"
+            ],
+            "primary_name": "PL17A",
+            "swap_group": 0
+        },
+        "49eaa6fd-f519-4821-83e3-f2215c451cff": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PL16A",
+            "swap_group": 0
+        },
+        "4b16b203-d6bf-45a8-a8b9-5e9aacaa23c2": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PL20B",
+            "swap_group": 0
+        },
+        "4b278835-c52a-4e2c-99f8-a4ebe73fe133": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PL20C",
+            "swap_group": 0
+        },
+        "5d83255a-e10c-4a7d-86fb-3ae6f6668cfe": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKC3_0"
+            ],
+            "primary_name": "PL17B",
+            "swap_group": 0
+        },
+        "93c1a92f-dfc5-49e4-9673-d383d510092b": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PL16B",
+            "swap_group": 0
+        },
+        "db471c3f-25c5-4e6a-8fdb-ae02b594cc36": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PL19A",
+            "swap_group": 0
+        },
+        "e36beff2-9128-4cbe-ad00-04de8e361f14": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PL19B",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "6683f7e6-1c1c-40e4-9f56-7bb4a65715e3"
+}

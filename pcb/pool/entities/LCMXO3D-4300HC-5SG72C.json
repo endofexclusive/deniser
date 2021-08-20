@@ -1,0 +1,40 @@
+{
+    "gates": {
+        "56061cad-6480-4ff8-9627-42d2cdb6f15c": {
+            "name": "Bank 0",
+            "suffix": "A",
+            "swap_group": 0,
+            "unit": "177b45e2-0c9b-41c0-a359-7de3ae2373f9"
+        },
+        "5661cace-8309-4551-a77f-058b3ecbc8e6": {
+            "name": "Bank 2",
+            "suffix": "C",
+            "swap_group": 0,
+            "unit": "db58989f-6cc0-4931-8d4a-6cd16002bbef"
+        },
+        "6460a5fd-badb-428b-93aa-7bbc082ae6e3": {
+            "name": "Power",
+            "suffix": "E",
+            "swap_group": 0,
+            "unit": "95ecd194-58df-4040-abad-687e18773373"
+        },
+        "abd684fd-08da-44d9-b74a-744d79a262cf": {
+            "name": "Bank 3",
+            "suffix": "D",
+            "swap_group": 0,
+            "unit": "6683f7e6-1c1c-40e4-9f56-7bb4a65715e3"
+        },
+        "efb95c3f-60e3-4f0c-9635-4634267e42f7": {
+            "name": "Bank 1",
+            "suffix": "B",
+            "swap_group": 0,
+            "unit": "7cf50ea6-fb9e-41b8-99a7-c97854e3fb75"
+        }
+    },
+    "manufacturer": "Lattice Semiconductor",
+    "name": "LCMXO3D-4300HC-5SG72C",
+    "prefix": "U",
+    "tags": [],
+    "type": "entity",
+    "uuid": "dbec89fa-6078-4b2e-b1e4-8707f8789bc2"
+}

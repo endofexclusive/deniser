@@ -1,0 +1,1 @@
+{"type": "entity", "manufacturer": "", "prefix": "J", "name": "Generic 10 pin connector", "tags": ["connector", "generic"], "uuid": "504f4bfc-0750-4221-89bb-1160fc2e6ee7", "gates": {"d0030b61-eea7-40e5-bb04-e8914c4f57d4": {"name": "Main", "suffix": "", "swap_group": 0, "unit": "f1a3ecf6-13ea-4fa4-bcf0-70c76df583e3"}}}

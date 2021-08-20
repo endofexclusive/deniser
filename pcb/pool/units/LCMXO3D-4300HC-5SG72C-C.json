@@ -1,0 +1,137 @@
+{
+    "manufacturer": "Lattice Semiconductor",
+    "name": "LCMXO3D-4300HC-5SG72C Bank 2",
+    "pins": {
+        "11ef300d-9464-4539-802e-d5c74bea39c6": {
+            "direction": "bidirectional",
+            "names": [
+                "MCLK",
+                "CCLK"
+            ],
+            "primary_name": "PB9A",
+            "swap_group": 0
+        },
+        "18c00a59-1b8e-4203-90ce-ae1cb238db30": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKC2_0"
+            ],
+            "primary_name": "PB13B",
+            "swap_group": 0
+        },
+        "28873b5e-befb-43db-b712-ae994d63b479": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PB10A",
+            "swap_group": 0
+        },
+        "387cf577-0091-4479-85d0-b3a1ae72a51e": {
+            "direction": "bidirectional",
+            "names": [
+                "SN"
+            ],
+            "primary_name": "PB30A",
+            "swap_group": 0
+        },
+        "4af5420f-7c29-4c74-92ae-b261be8bd79b": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PB4B",
+            "swap_group": 0
+        },
+        "53026201-937f-416f-b268-f0f4cec0a5e5": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PB24B",
+            "swap_group": 0
+        },
+        "63120855-1d12-436c-8494-58601474a165": {
+            "direction": "bidirectional",
+            "names": [
+                "SI",
+                "SISPI"
+            ],
+            "primary_name": "PB30B",
+            "swap_group": 0
+        },
+        "6b271cc1-0a10-4fbd-9843-7b5df91dff44": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PB26A",
+            "swap_group": 0
+        },
+        "81083863-5f7b-4f4d-87ff-859d78aa6791": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKT2_1"
+            ],
+            "primary_name": "PB20A",
+            "swap_group": 0
+        },
+        "86312cee-54a2-4a75-8f06-eb70ce85f437": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VCCIO2",
+            "swap_group": 0
+        },
+        "93ac3566-f8f8-43f6-9c1e-49a4d2c05e91": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PB23C",
+            "swap_group": 0
+        },
+        "b0004db7-886c-4239-b886-6598d818e9db": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PB26B",
+            "swap_group": 0
+        },
+        "cc100d70-3ebe-4ac6-a661-298c60d2a82a": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKT2_0"
+            ],
+            "primary_name": "PB13A",
+            "swap_group": 0
+        },
+        "ce57d57e-0b7d-4a98-acf7-1d6629ff86ae": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PB10B",
+            "swap_group": 0
+        },
+        "e0c4ab1a-6c14-4ded-a8a6-2ca225ba24e5": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKC2_1"
+            ],
+            "primary_name": "PB20B",
+            "swap_group": 0
+        },
+        "eac9cf01-070d-46ac-bcce-9ee53b1a81fc": {
+            "direction": "bidirectional",
+            "names": [
+                "SO",
+                "SPISO"
+            ],
+            "primary_name": "PB9B",
+            "swap_group": 0
+        },
+        "f29ea0c4-8c33-4b77-b788-2e17d4bacd94": {
+            "direction": "bidirectional",
+            "names": [
+                "CSSPIN"
+            ],
+            "primary_name": "PB4A",
+            "swap_group": 0
+        },
+        "fc99055f-3b7a-4b14-9b2b-7215d882429e": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PB24A",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "db58989f-6cc0-4931-8d4a-6cd16002bbef"
+}

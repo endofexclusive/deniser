@@ -1,0 +1,42 @@
+{
+    "gates": {
+        "9b72157c-ae2a-41ce-b1f7-ff1118cd80b0": {
+            "name": "2",
+            "suffix": "C",
+            "swap_group": 0,
+            "unit": "95985c94-ba91-43c9-bf96-b5500d3827e6"
+        },
+        "b316917f-38c2-4019-af6d-ebc7ad8b6aef": {
+            "name": "0",
+            "suffix": "A",
+            "swap_group": 0,
+            "unit": "8d21a76b-7754-4362-8709-0bca9a260e0c"
+        },
+        "d288639d-5c00-4ff4-be42-78b97b2f568f": {
+            "name": "1",
+            "suffix": "B",
+            "swap_group": 0,
+            "unit": "beb7b66a-f35a-48db-8734-bad1a8653efc"
+        },
+        "e22f9dc9-50eb-4643-abba-01902192ee71": {
+            "name": "power",
+            "suffix": "E",
+            "swap_group": 0,
+            "unit": "76ec0390-43dd-460a-8c3c-5b4f9584cf3e"
+        },
+        "f1afdf4d-3a15-4bf0-8b88-dee57692be7f": {
+            "name": "3",
+            "suffix": "D",
+            "swap_group": 0,
+            "unit": "8f25b761-81ea-4bfa-ac32-e75a8d035aad"
+        }
+    },
+    "manufacturer": "Lattice Semiconductor",
+    "name": "LCMXO2-256HC-4TG100C",
+    "prefix": "U",
+    "tags": [
+        "fpga"
+    ],
+    "type": "entity",
+    "uuid": "078a241c-5d18-44b4-bc81-8436712a7635"
+}

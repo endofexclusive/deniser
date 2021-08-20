@@ -1,0 +1,128 @@
+{
+    "manufacturer": "Lattice Semiconductor",
+    "name": "LCMXO2-256HC-4TG100C A",
+    "pins": {
+        "04ea01bb-c3b7-4969-8ad5-48a0c3bff8c6": {
+            "direction": "bidirectional",
+            "names": [
+                "DONE"
+            ],
+            "primary_name": "PT9D",
+            "swap_group": 0
+        },
+        "30e5db87-54e2-4d98-8593-9e38e411f842": {
+            "direction": "bidirectional",
+            "names": [
+                "TCK"
+            ],
+            "primary_name": "PT7A",
+            "swap_group": 0
+        },
+        "46658e98-ed57-4ca8-8bb8-7433e5f36a22": {
+            "direction": "bidirectional",
+            "names": [
+                "PROGRAMN"
+            ],
+            "primary_name": "PT9B",
+            "swap_group": 0
+        },
+        "4f3927cb-3809-45cb-bb11-d82b531ab459": {
+            "direction": "bidirectional",
+            "names": [
+                "SDA/PCLKC0_0"
+            ],
+            "primary_name": "PT8D",
+            "swap_group": 0
+        },
+        "522765a1-4b64-4bf0-93fd-0e5a6c9dc1df": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKC0_1"
+            ],
+            "primary_name": "PT8B",
+            "swap_group": 0
+        },
+        "53969d3a-83fa-4319-b019-3ab0fbf77f59": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VCCIO0",
+            "swap_group": 0
+        },
+        "601c66f9-fa19-415f-8734-17ec25d786fa": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PT6A",
+            "swap_group": 0
+        },
+        "6506237d-58d1-4490-8ad5-e15746c1ffa9": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKT0_1"
+            ],
+            "primary_name": "PT8A",
+            "swap_group": 0
+        },
+        "65f9b9e2-a80f-48a3-9108-9ee607436ce8": {
+            "direction": "not_connected",
+            "names": [],
+            "primary_name": "NC",
+            "swap_group": 0
+        },
+        "671dcab2-e433-41cc-ac38-131ab42561f9": {
+            "direction": "bidirectional",
+            "names": [
+                "INITN"
+            ],
+            "primary_name": "PT9C",
+            "swap_group": 0
+        },
+        "68e41e71-4b36-4058-a644-277c2f871fb8": {
+            "direction": "bidirectional",
+            "names": [
+                "SCL/PCLKT0_0"
+            ],
+            "primary_name": "PT8C",
+            "swap_group": 0
+        },
+        "7fc1841e-fddb-4356-b2ac-39c28b7e0e9b": {
+            "direction": "bidirectional",
+            "names": [
+                "TDI"
+            ],
+            "primary_name": "PT6D",
+            "swap_group": 0
+        },
+        "b1508da3-4f3e-4c73-8035-73ba24ddd4e4": {
+            "direction": "bidirectional",
+            "names": [
+                "JTAGENB"
+            ],
+            "primary_name": "PT9A",
+            "swap_group": 0
+        },
+        "cdcdcd43-7a2b-4166-8954-f1deb64ff905": {
+            "direction": "bidirectional",
+            "names": [
+                "TDO"
+            ],
+            "primary_name": "PT6C",
+            "swap_group": 0
+        },
+        "e0afc622-881d-4c16-89ef-ead8e8fdc152": {
+            "direction": "bidirectional",
+            "names": [
+                "TMS"
+            ],
+            "primary_name": "PT7B",
+            "swap_group": 0
+        },
+        "f3e02c4e-5e8f-4837-81bd-4164e6037110": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PT6B",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "8d21a76b-7754-4362-8709-0bca9a260e0c"
+}

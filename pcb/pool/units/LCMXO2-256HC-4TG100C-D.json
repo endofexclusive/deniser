@@ -1,0 +1,116 @@
+{
+    "manufacturer": "Lattice Semiconductor",
+    "name": "LCMXO2-256HC-4TG100C D",
+    "pins": {
+        "07673f01-ba1c-4439-9110-96a97ab546ae": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PL2A",
+            "swap_group": 0
+        },
+        "11e68d63-f498-4353-a278-e573465cba4e": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PL3B",
+            "swap_group": 0
+        },
+        "3ba22c31-d39d-4919-bff3-114207a7f94e": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKT3_0"
+            ],
+            "primary_name": "PL5C",
+            "swap_group": 0
+        },
+        "57f26284-7ea1-45fe-92ca-0ebd16269624": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PL2B",
+            "swap_group": 0
+        },
+        "648d8c54-0639-4ffc-984a-f71455a2cb06": {
+            "direction": "not_connected",
+            "names": [],
+            "primary_name": "NC",
+            "swap_group": 0
+        },
+        "6591ec8d-b83c-4bbb-9775-19f4c6001afa": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PL5A",
+            "swap_group": 0
+        },
+        "6e703e91-d014-42c0-b863-3857bdd7c6c9": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PL6A",
+            "swap_group": 0
+        },
+        "71b9455c-b23c-4683-a151-ce7da3360874": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PL6B",
+            "swap_group": 0
+        },
+        "75421ac5-c97c-48f4-b3ed-f68d57aa5322": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PL3A",
+            "swap_group": 0
+        },
+        "a310a842-a2e3-4d39-8679-b6f21208583c": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKC3_0"
+            ],
+            "primary_name": "PL5D",
+            "swap_group": 0
+        },
+        "a908017f-fe70-48df-a4b4-015bb7759534": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKC3_2"
+            ],
+            "primary_name": "PL2D",
+            "swap_group": 0
+        },
+        "c949bb95-3ffb-4b6a-adf7-081942aca436": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKT3_2"
+            ],
+            "primary_name": "PL2C",
+            "swap_group": 0
+        },
+        "d28d7295-7320-411d-91f0-28439fe43ded": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "PL5B",
+            "swap_group": 0
+        },
+        "d4da7bc2-04eb-473d-a6a2-1cafa6956831": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKC3_1"
+            ],
+            "primary_name": "PL3D",
+            "swap_group": 0
+        },
+        "dcb8aa3d-3b07-4acb-9ca5-a8ad968cbea7": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VCCIO3",
+            "swap_group": 0
+        },
+        "ef20bcf6-8586-4488-89e9-88611bec2132": {
+            "direction": "bidirectional",
+            "names": [
+                "PCLKT3_1"
+            ],
+            "primary_name": "PL3C",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "8f25b761-81ea-4bfa-ac32-e75a8d035aad"
+}
