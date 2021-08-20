@@ -1,0 +1,14 @@
+Horizon EDA can be found at: https://horizon-eda.org
+
+Located in this directory is the complete Horizon EDA project
+file (deniser.hprj). It is self-contained, meaning that all
+required library pieces are located here aswell.
+
+The design can be used with Horizon version 2.0.0.
+
+Schematic and layout was originally created with this Horizon EDA
+version:
+
+* horizon.git: a45916bf
+* horizon-pool.git: 7b27fe82
+
