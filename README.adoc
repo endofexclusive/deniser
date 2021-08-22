@@ -48,7 +48,7 @@ link:doc/board.pdf[Deniser board document].
 Installation is as easy as removing the original Denise IC from its
 socket and put the Deniser board in its place.
 
-image::picture/install0.png[installed in A500, 320]
+image::picture/install0.png[installed in A500]
 
 The jumper wires in the picture are not required for normal
 operation and can be disconnected after the FPGA on-chip
